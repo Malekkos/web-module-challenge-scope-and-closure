@@ -30,11 +30,12 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  //counter1 utilizes a nested function, whereas counter2 does not.
   2. Which of the two uses a closure? How can you tell?
-  
+  //counter1 uses it, and you can tell because it's a nested function; only nested function can display closure;
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+  //counter1 would be best when wanting to KEEP the data stored for later use; counter2 would be best when only using the data a single time. It's all a memory thing.
 */
 
 // counter1 code
