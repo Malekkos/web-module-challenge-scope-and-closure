@@ -65,11 +65,16 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+//min = Math.ceil(min);
+//max = Math.floor(max);
+//return Math.floor(Math.random() * (max - min) + min);
+//Above is curtesy of MDN
+//Cant use this because it wanted NOTHING in the parameter field. Why not just leave it blank?
+return Math.floor(Math.random() * Math.floor(3));
 }
 
-
+//aaa
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
   1. Receive the callback function `inning` that was created in Task 2 in the first parameter
@@ -84,10 +89,19 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*Code Here*/){
-  /*Code Here*/
+function finalScore(inning, numInning){
+  let Home = 0;
+  let Away = 0;
+  let score = {};
+  for(let i = 0; i < numInning; i++) {
+    Home = Home + inning(); 
+  }
+  for(let i = 0; i < numInning; i++) {
+    Away = Away + inning();
+  }
+  return score = {Away, Home}
+  
 }
-
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
