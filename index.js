@@ -116,9 +116,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
-
+function getInningScore(inning) {
+  let Home = Home + inning();
+  let Away = Away + inning();
+  let result = {Home, Away}
+  return result
 }
 
 
